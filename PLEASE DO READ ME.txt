@@ -1,0 +1,17 @@
+To convert the MP4 file to AVI so that imagej can read it
+
+open a command window (windows key+R, then type "cmd" then Enter)
+type the lines below. substitute actual data for text in <>:
+
+cd <directory where the MP4 file lives>
+mp42avi.bat <filename of the MP4 file>
+
+This should produce an AVI file with the same name.
+
+=============
+in FIJI/Imagej, run the "lev.ijm" script. This should produce a Results.csv file that contains location, size, aspect ratio, etc. of the droplet
+
+=============
+in Matlab, run the "sp.m" script. It asks for the Results.csv file and makes pictures from it. All this is very experimental. Ask for help if needed.
+ 
+
